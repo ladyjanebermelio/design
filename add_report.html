@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Form</title>
+    <link rel="stylesheet" href="/SYSTEM1/add_report.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit a Report</h1>
+        <form action="/SYSTEM1/add_report.php" method="POST">
+            <label for="pcno">PC Number:</label>
+            <input type="text" id="pcno" name="pcno" required>
+
+            <label for="issue">Issue:</label>
+            <textarea id="issue" name="issue" rows="4" required></textarea>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+</body>
+</html>
